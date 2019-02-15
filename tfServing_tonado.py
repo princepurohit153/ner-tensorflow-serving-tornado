@@ -54,8 +54,7 @@ class ExtractionHandler(tornado.web.RequestHandler):
     def get_extract(self, content):
         result=[]
         try:
-            #result=output(content)#分词
-            result=main(content)#实体识别
+            result=main(content)
             
             return 0, 'success',result
         except:
@@ -70,8 +69,6 @@ if __name__ == "__main__":
                                     debug = False
                                   )
     http_server = tornado.httpserver.HTTPServer(app)
-    #http_server.bind(5900)#分词
-    http_server.bind(6800)#实体识别
+    http_server.bind(6800)
     http_server.start(0)
-    # print(tornado.ioloop.IOLoop.initialized())
     tornado.ioloop.IOLoop.instance().start()
