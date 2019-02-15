@@ -1,0 +1,50 @@
+data_params:
+  path_result: ./data/test.result
+  path_test: ./data/test_data.utf8
+  path_train: ./data/char_ner_combine_data.utf8
+  sep: table
+  voc_params:
+    char: {min_count: 0, path: ./Res/voc/char.voc.pkl}
+    f1: {min_count: 0, path: ./Res/voc/f1.voc.pkl}
+    f2: {min_count: 0, path: ./Res/voc/f2.voc.pkl}
+    label: {min_count: 0, path: ./Res/voc/label.voc.pkl}
+model: NER
+model_params:
+  batch_size: 16
+  bilstm_params: {num_layers: 1, num_units: 128, rnn_dropout: 0.5}
+  clip: 10
+  conv_dropout: 0.2
+  conv_filter_len_list: [1, 2, 3, 4, 5]
+  conv_filter_size_list: [8, 8, 8, 8, 8]
+  dev_size: 0.08
+  dropout_rate: 0.5
+  embed_params:
+    char:
+      dropout_rate: 0.3
+      path: null
+      path_pre_train: null
+      shape: [85, 16]
+    f1:
+      dropout_rate: 0.5
+      path: ./Res/embed/char_embed.pkl
+      path_pre_train: ./data/char_word2vec_100.utf8
+      shape: [1496, 100]
+    f2:
+      dropout_rate: 0.5
+      path: null
+      path_pre_train: null
+      shape: [42, 32]
+  feature_names: [f1]
+  l2_rate: 0.01
+  learning_rate: 0.01
+  max_patience: 5
+  nb_classes: 271
+  nb_epoch: 50
+  path_model: ./Model/best_model
+  rnn_unit: lstm
+  sequence_len_pt: 98
+  sequence_length: 500
+  use_char_feature: false
+  use_crf: true
+  word_len_pt: 95
+  word_length: 11
