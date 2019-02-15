@@ -68,4 +68,4 @@ The following are the main requirements, to run the program it need to install
 ### Reference
 
 - [https://github.com/tensorflow/serving/blob/master/tensorflow_serving/g3doc/serving_basic.md](https://github.com/tensorflow/serving/blob/master/tensorflow_serving/g3doc/serving_basic.md)
-
+- [https://github.com/liu-nlper/NER-LSTM-CRF.git](https://github.com/liu-nlper/NER-LSTM-CRF.git)
