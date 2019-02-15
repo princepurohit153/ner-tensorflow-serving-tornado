@@ -68,5 +68,4 @@ The following are the main requirements, to run the program it need to install
 ### Reference
 
 - [https://github.com/tensorflow/serving/blob/master/tensorflow_serving/g3doc/serving_basic.md](https://github.com/tensorflow/serving/blob/master/tensorflow_serving/g3doc/serving_basic.md)
-- [http://192.168.150.61:2080/AI-team/MedicalRecords_Post_Structuration/tree/master/Version_2.0_model/NER-LSTM-CRF](http://192.168.150.61:2080/AI-team/MedicalRecords_Post_Structuration/tree/master/Version_2.0_model/NER-LSTM-CRF)
-    
+
