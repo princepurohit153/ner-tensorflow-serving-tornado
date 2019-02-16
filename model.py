@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 # -*- encoding: utf-8 -*-
-__author__ = 'jxliu.nlper@gmail.com'
 """
     模型: bi-lstm + crf
 """
